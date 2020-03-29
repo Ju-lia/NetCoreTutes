@@ -75,14 +75,7 @@ namespace WebSocketAndNetCore.Web
                     await next();
                 }
             });
-            app.UseSpa(config =>
-            {
-                config.Options.SourcePath = "client-app";
-                if (env.IsDevelopment())
-                {
-                    config.UseAngularCliServer("start");
-                }
-            });
+
 
         }
     }
